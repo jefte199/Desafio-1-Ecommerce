@@ -1,7 +1,9 @@
+import Home from './pages/Home';
+
 function App() {
   return (
     <>
-      <h1>en.cantando_</h1>
+      <Home />
     </>
   );
 }
