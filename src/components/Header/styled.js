@@ -1,34 +1,21 @@
 import styled from 'styled-components';
-//import ImgBackground from '../img/pulseiraBg.png';
 
-const itemColor = "#7EA1C4";
-const backgroundColor = "#051122";
+const itemColor = "#FFC745";
+const backgroundColor = "#007A78";
 
 export const SectionHeader = styled.section`
-  margin-button: 200px;
-  padding: 1em;
+  text-align: center;
+  font-size: 50px;
+  fonty-famyle: sans-serif;
+  color: ${itemColor};
   background-color: ${backgroundColor};
-`;
-
-export const SectionBody = styled.section`
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  border: 1px solid #ccc;
-`;
+  `;
 
 export const Title = styled.h1`
   text-align: center;
   font-size: 50px;
   fonty-famyle: sans-serif;
   color: ${itemColor};
-`;
-
-export const subTitle = styled.h2`
-  text-align: center;
-  font-size: 20px;
-  fonty-famyle: sans-serif;
-  color: #333;
 `;
 
 export const MsgHead = styled.span`
@@ -52,13 +39,23 @@ export const Input = styled.input`
 `;
 
 export const Button = styled.button`
-  display: inline-block;
+  heigth: 1.5rem;
+  border: 1px solid ${backgroundColor};
+  background: #000;
   color: ${itemColor};
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  background-color: ${backgroundColor};
-  border: 2px solid ${backgroundColor};
-  border-radius: 3px;
-  display: block;
+  border-radius: 0 .25rem .25rem 0;
+
+  &:focus,
+  &:active {
+    autline: nome;
+    box-shadow: nome;
+  }
+  `;
+
+export const Container = styled.div`
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
 `;
+
