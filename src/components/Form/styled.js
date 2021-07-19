@@ -22,7 +22,25 @@ export const Title = styled.h1`
   color: #ddd;
 `;
 
-export const Button = styled.a`
+export const Success = styled.span`
+  padding: 5px;
+  text-align: center;
+  font-size: 20px;
+  fonty-famyle: sans-serif;
+  color: ${itemColor};
+  background: ${backgroundColor};
+`;
+
+export const Err = styled.span`
+  padding: 5px;
+  text-align: center;
+  font-size: 20px;
+  fonty-famyle: sans-serif;
+  color: #e32636;
+  background: ${itemColor};
+`;
+
+export const Button = styled.button`
   text-decoration: none;  
   font-size: 1em;
   margin: 1em;
@@ -31,6 +49,3 @@ export const Button = styled.a`
   background: ${backgroundColor};
   color: ${itemColor};
 `;
-
-
-
